@@ -1,42 +1,48 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <title>Gil George CV</title>
+      <title>Gil George CV</title>
   </head>
-  <body>
-  <header>
-        <h1>George Gil</h1>
-    <img src="https://masterpiecer-images.s3.yandex.net/5fb43e9c87ad5a1:upscaled"  width="100" height="111" alt="my avatar" />
-    <h2>Contact information</h2>
-    <p> Telegram: @Gilgrg</p>
-    <p> georgec.gil@gmail.com</p>
+  <main>
+  <nav class="menu">
+  <ul>
+    <li><a href="#myself" class="nav-link">myselfAbout me</a></li>
+  </ul>
+</nav>
+    <header>
+      <h1>George Gil</h1>
+        <img src="https://masterpiecer-images.s3.yandex.net/5fb43e9c87ad5a1:upscaled"  width="100" height="111" alt="my avatar" />
+        <h2>Contact information</h2>
+          <p> Telegram: @Gilgrg</p>
+          <p> georgec.gil@gmail.com</p>
     <section id="myself">
         <h2>About Me</h2>
-        <p>Born 1997</p>
-        <p>Graduated BSUIR 2020</p>
-        <p>Free time: violin, math, swiming</p>
+          <p>Born 1997</p>
+          <p>Graduated BSUIR 2020</p>
+          <p>Free time: violin, math, swiming</p>
     </section>
+    </header>
     <section id="Skiils">
         <h2>Skills</h2>
-        <p>Java basic</p>
-        <p>HTML</p>
-        <p>CSS</p>
+          <p>Java basic</p>
+          <p>HTML</p>
+          <p>CSS</p>
     </section>
     <section id="code">
-    <h2>Code example</h2>
+        <h2>Code example</h2>
         <pre>
-<code>
+          <code>
 public class Main {
     public static void main(String[] args) {
         String rub = null;
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <10; i++) {
             int s = (int) (Math.random() * 1000000);
             if (s % 10 == 1) {
                 rub = " рубль";
-            } else if (s % 10 > 1 && s % 10 < 4) {
+            } else if (s % 10 > 1 && s % 10 <4) {
                 rub = " рубля";
-            } else if ((s % 10 > 4 && s % 10 <= 9) || (s % 100 > 10 && s % 100 < 21) || s % 10 == 0) {
+            } else if ((s % 10 > 4 && s % 10 <9) || (s % 100 > 10 && s % 100 <21) || s % 10 == 0) {
                 rub = " рублей";
             }
             System.out.println(s + rub);
@@ -64,9 +70,14 @@ public class Main {
      <section id="Education">
         <h2>Education</h2>
         <p>2019 BSUIR - mechanical designer </p>
-       <footer>
-    <p>https://github.com/Gogagogin/</p>
-  </footer>
+    </section>
+  <footer>
+    <p>2025 https://github.com/Gogagogin/
+    <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/a2a648a704a2eee3e2013b9e13bee765ab00f959/tasks/cv/rs-school-logo.svg"  width="50" height="50" alt="RS" />
+    </p>
     
-  </body>
+    <p>https://rs.school/courses/javascript-ru</p>
+    
+  </footer>
+  </main>
 </html>

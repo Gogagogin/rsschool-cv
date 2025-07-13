@@ -1,2 +1,1 @@
-# rsschool-cv
-CV_task_1
+https://Gogagogin.github.io/rsschool-cv/

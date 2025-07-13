@@ -1,2 +1,1 @@
-# rsschool-cv
-CV_task_1
+https://github.com/Gogagogin/rsschool-cv/blob/gh-pages/cv.md

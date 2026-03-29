@@ -1,119 +1,130 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f6f9;
-  margin: 0;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column;
-}
-
-.CV-header {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.main-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav li {
-    display: inline;
-    margin-left: 40px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.main-nav a:hover {
-    color: #f4a261;
-}
-
-
-.about-me {
-    display: flex;
-    align-items: space-between;
-    padding: 20px;
-    background-color: #white;
-    color: white;
-}
-
-.welcome-information{
-    display: flex;
-    align-items: space-between;
-    font-size: 20px;
-    padding: 20px;
-    background-color: #white;
-    color: white;
-}
-
-  .CV-photo{
-  	width: 400px;
-    padding: 20px, 0px, 0px, 0px;       
-    margin: 50px, 0px, 0px, 0px;          
-  }
-
-  .no-bullets {
-  	color: #333;
-    list-style-type: none; /* Убирает маркеры */
-    padding: 0;            /* Убирает левый отступ */
-    margin: 0;             /* Убирает внешние отступы */
-  }
-    .bullets {
-  	color: #333;
-    padding: 0;          /* Убирает левый отступ */
-    margin: 0px 20px 0px;           /* Убирает внешние отступы */
-  }
-  
-a:hover {
-    color: #f4a261;
-}
-
-.about-skills {
-  max-width: 1200px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 6px;
-  color: #333;
-}
-
-h1 {
-  color: #04AA6D;
-}
-h2{
-	color: #333;
-	font-size: 30px;
-    padding: 10px 10px 10px;
-    margin: 10px
-}
-h3{
-	color: #333;
-	font-size: 24px;
-    padding: 10px 20px 10px;
-    margin: 10px
-}
-
-p{
-	padding: 10px 30px 10px;
-}
-footer{
-  background-color: #808080;
-  margin: 0;
-  display: flex;
-  justify-content: space-around; 
-  align-items: center; 
-  width: 100%;
-  box-sizing: border-box;
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header class="CV-header">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skils</a></li>
+            <li><a href="#">Contacts</a></li>         
+        </ul>
+    </nav>
+</header>
+<main>
+<div class = "about-me">
+<div>
+<h1> Welcome to my CV! </h1>
+<div>
+<div class = welcome-information>
+,/.<div class = "CV-photo">
+	<img src="https://masterpiecer-images.s3.yandex.net/5fb43e9c87ad5a1:upscaled"  width="200" height="200" alt="my avatar" />
+</div>
+<div class = "description">
+<ul class="no-bullets">
+  <li>Hi, my name is George Gil</li>
+  <ul class="bullets"> You can find me:
+  <li class="bullets">tg: 
+  <a href="https://t.me/gilgrg">Gilrgr</a></li>
+  <li class="bullets">GitHub:
+  <a href="https://github.com/Gogagogin">GogaGogin</a>
+  </li>
+  </ul>
+  <li>My goal is to become Full-Stack Developer</li>
+</ul>
+</div>
+</div>
+</div>
+<div class = "about-skills">
+<h2> Little bit about me</h2>
+<p> I'm 28 years old student of Rooling Scops School, now working as PM at JSC "Peleng", at free time learning JS, swimming and some times violin. 
+</div>
+<div class = "about-skills">
+<h2> My skills</h2>
+ 		<ul>
+            <li>Java Basic</li>
+            <li>HTML</li>
+            <li>CSS</li>         
+        </ul>
+</div>
+<div class = "about-skills">
+<h2> My code exampls</h2>
+<h3> Java Basic</h3>
+            <pre>
+          	<code>
+public class Main {
+    public static void main(String[] args) {
+        String rub = null;
+        for (int i = 1; i <10; i++) {
+            int s = (int) (Math.random() * 1000000);
+            if (s % 10 == 1) {
+                rub = " рубль";
+            } else if (s % 10 > 1 && s % 10 <4) {
+                rub = " рубля";
+            } else if ((s % 10 > 4 && s % 10 <9) || (s % 100 > 10 && s % 100 <21) || s % 10 == 0) {
+                rub = " рублей";
+            }
+            System.out.println(s + rub);
+        }
     }
+}
+</code>
+</pre>
+<h3> JS CodeWars 6 kyu</h3>
+            <pre>
+          	<code>
+function dataReverse(data) {
+const multiArray = [];
 
+for (let i = 0; i < data.length; i += 8) {
+  multiArray.push(data.slice(i, i + 8));
+}
+  return multiArray.reverse().flat();
+}
+</code>
+</pre>
+</div>
+
+<div class = "about-skills">
+<h2> My achievements</h2>
+<h3> Programing courses</h3>
+ 		<ul>
+            <li>Java Basic</li>
+            <li>HTML</li>
+            <li>CSS</li>   
+            <li>GitHub
+  <a href="https://githb.com/Gogagogin/homework"> Java Tasks</a>
+  </li>
+        
+        </ul>
+<h3>My achievements </h3>
+	 		<ul>
+            <li>BUSIR Graduate</li>
+            <li>Peleng project manager</li>
+            <li>
+Still haven't had a fight with the boss =(</li>         
+        </ul>
+        <h3> BTW, my English level is A2-B1, but i realy wants to come back to B2</h3>
+</div>
+
+</main>
+<footer>
+    <nav class="main-nav">
+        <ul>
+              <li class="bullets">
+  <a href="https://github.com/Gogagogin">GogaGogin</a>
+  </li>
+            <li>2026</li>
+            <li>
+            <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/78abefa42ee2c50401e2e6adcb5122e6aa7de9bb/tasks/cv/rs-school-logo.svg"  style="width: 10%; height: auto;" alt="logo" /> 
+            </li>  
+            <li class="bullets">
+  <a href="https://rs.school/courses/javascript-preschool-ru">JS pre-school</a>
+  </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
